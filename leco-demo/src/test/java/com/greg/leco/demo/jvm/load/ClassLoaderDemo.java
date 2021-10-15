@@ -1,4 +1,4 @@
-package com.greg.leco.demo.jvm;
+package com.greg.leco.demo.jvm.load;
 
 /**
  * 类加载 - 双亲委派模式

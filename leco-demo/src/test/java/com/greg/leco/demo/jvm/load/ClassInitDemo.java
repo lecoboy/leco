@@ -1,4 +1,4 @@
-package com.greg.leco.demo.jvm;
+package com.greg.leco.demo.jvm.load;
 
 /**
  * 类初始化
