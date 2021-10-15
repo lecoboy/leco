@@ -1,5 +1,7 @@
 package com.greg.leco.demo.jvm;
 
+import org.junit.Test;
+
 /**
  * 了解一下 iinc 指令
  *
@@ -16,6 +18,24 @@ public class IncDemo {
         int b = a++ + ++a + a--;
         System.out.println(a);
         System.out.println(b);
+    }
+
+    @Test
+    public void test() {
+        int i = 0;
+        int x = 0;
+        while (i < 10) {
+            x = x++;
+            i++;
+        }
+        System.out.println(x);
+    }
+
+    @Test
+    public void test2() {
+        int x = 6;
+        x = x++;
+        System.out.println(x);
     }
 
 }
