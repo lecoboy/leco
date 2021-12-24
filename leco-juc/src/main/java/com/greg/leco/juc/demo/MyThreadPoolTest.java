@@ -1,4 +1,4 @@
-package com.greg.leco.juc;
+package com.greg.leco.juc.demo;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,7 +1,6 @@
-package com.greg.leco.juc.test;
+package com.greg.leco.juc.demo;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
 
 
 /**
@@ -13,11 +12,10 @@ import org.junit.Test;
 public class CreateThreadTest {
 
     public static void main(String[] args) {
-
+        test1();
     }
 
-    @Test
-    public void test1() {
+    private static void test1() {
         Thread t = new Thread() {
             @Override
             public void run() {
@@ -29,7 +27,7 @@ public class CreateThreadTest {
         log.debug("main run");
     }
 
-    public void test2() {
+    private static void test2() {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -40,7 +38,7 @@ public class CreateThreadTest {
         t1.start();
     }
 
-    public void test3() {
+    private static void test3() {
         Runnable runnable = () -> {log.debug("t1 run");};
         Thread t1 = new Thread(runnable, "t1");
         t1.start();
