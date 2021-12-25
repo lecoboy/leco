@@ -17,6 +17,7 @@ import java.util.function.Function;
  */
 public class ProducerHelper {
     private final String namesrvAddr;
+    private final static String DEFAULT_GROUP = "defaultGroup";
 
     public ProducerHelper(String namesrvAddr) {
         this.namesrvAddr = namesrvAddr;
@@ -27,7 +28,11 @@ public class ProducerHelper {
         for(int i=0;i<10;i++) {
             msgBodies.add("Hello World" + i);
         }
-        producerTest("base", tag, msgBodies, e -> e, producerHandler);
+        stringMsgProducerTest("hello", tag, msgBodies, producerHandler);
+    }
+
+    public void stringMsgProducerTest(String topic, String tag, List<String> msgs, BiConsumer<Message, DefaultMQProducer> producerHandler) {
+        producerTest(topic, tag, msgs, e -> e, producerHandler);
     }
 
     /**
@@ -60,8 +65,12 @@ public class ProducerHelper {
     }
 
     public <T> void producerTest(String topic, String tag, List<T> msgs, Function<T,String> msgConverter, Consumer<ProducerContext<T>> producerHandler) {
+        producerTest(DEFAULT_GROUP, topic, tag, msgs, msgConverter, producerHandler);
+    }
+
+    private <T> void producerTest(String group, String topic, String tag, List<T> msgs, Function<T, String> msgConverter, Consumer<ProducerContext<T>> producerHandler) {
         // 1.创建消息生产者producer，并制定生产者组名
-        DefaultMQProducer producer = new DefaultMQProducer("group1");
+        DefaultMQProducer producer = new DefaultMQProducer(group);
         // 2.指定Nameserver地址
         producer.setNamesrvAddr(namesrvAddr);
         // 3.启动producer

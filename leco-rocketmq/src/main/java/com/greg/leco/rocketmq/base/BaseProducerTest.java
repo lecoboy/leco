@@ -19,7 +19,7 @@ public class BaseProducerTest {
      * 发送单向消息
      */
     public static void sendOneWayMsg() {
-        producerHelper.helloProducerTest("Tag3", (msg, producer) -> {
+        producerHelper.helloProducerTest("oneWayMsg", (msg, producer) -> {
             try {
                 producer.sendOneway(msg);
                 System.out.println("发送单向消息");
@@ -33,7 +33,7 @@ public class BaseProducerTest {
      * 发送异步消息
      */
     public static void sendAsyncMsg() {
-        producerHelper.helloProducerTest("Tag2", (msg, producer) -> {
+        producerHelper.helloProducerTest("asyncMsg", (msg, producer) -> {
             try {
                 producer.send(msg, new SendCallback() {
                     @Override
@@ -56,7 +56,7 @@ public class BaseProducerTest {
      * 发送同步消息
      */
     public static void sendSyncMsg() {
-        producerHelper.helloProducerTest("Tag1", (msg, producer) -> {
+        producerHelper.helloProducerTest("syncMsg", (msg, producer) -> {
             try {
                 SendResult result = producer.send(msg);
                 System.out.println("发送结果: " + result);
