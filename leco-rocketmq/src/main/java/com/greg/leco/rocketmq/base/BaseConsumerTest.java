@@ -1,4 +1,4 @@
-package com.greg.leco.rocketmq.base.consumer;
+package com.greg.leco.rocketmq.base;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
@@ -9,7 +9,7 @@ import org.apache.rocketmq.common.protocol.heartbeat.MessageModel;
  * @author greg
  * @version 2021/12/25 19:04
  */
-public class BaseConsumer {
+public class BaseConsumerTest {
     public static void main(String[] args) throws Exception {
         // 1.创建消费者Consumer，制定消费者组名
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("group1");

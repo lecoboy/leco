@@ -1,4 +1,4 @@
-package com.greg.leco.rocketmq.base.producer;
+package com.greg.leco.rocketmq.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package com.greg.leco.rocketmq.order;
 
-import com.greg.leco.rocketmq.base.producer.BaseProducer;
+import com.greg.leco.rocketmq.utils.ProducerHelper;
 
 import java.util.List;
 
@@ -10,11 +10,13 @@ import java.util.List;
  * 使用订单场景演示 顺序消息
  */
 public class Producer {
+    private final static ProducerHelper producerHelper = new ProducerHelper("192.168.0.104:9876;192.168.0.102:9876");
+
     public static void main(String[] args) {
         // 组装消息
         List<OrderStep.Order> orders = OrderStep.buildOrders();
         // 发送顺序消息
-        BaseProducer.toStringMsgProducerTest("OrderTopic", "Order", orders, context -> {
+        producerHelper.toStringMsgProducerTest("OrderTopic", "Order", orders, context -> {
             try {
                 context.getProducer().send(
                         // 发送的消息
