@@ -42,35 +42,35 @@ public class OrderStep {
                         .desc("完成")
                         .build(),
                 Order.builder()
-                        .orderId(10002)
+                        .orderId(10005)
                         .desc("创建")
                         .build(),
                 Order.builder()
-                        .orderId(10002)
+                        .orderId(10005)
                         .desc("付款")
                         .build(),
                 Order.builder()
-                        .orderId(10002)
+                        .orderId(10005)
                         .desc("推送")
                         .build(),
                 Order.builder()
-                        .orderId(10002)
+                        .orderId(10005)
                         .desc("完成")
                         .build(),
                 Order.builder()
-                        .orderId(10003)
+                        .orderId(10049)
                         .desc("创建")
                         .build(),
                 Order.builder()
-                        .orderId(10003)
+                        .orderId(10049)
                         .desc("付款")
                         .build(),
                 Order.builder()
-                        .orderId(10003)
+                        .orderId(10049)
                         .desc("推送")
                         .build(),
                 Order.builder()
-                        .orderId(10003)
+                        .orderId(10049)
                         .desc("完成")
                         .build()
         );
