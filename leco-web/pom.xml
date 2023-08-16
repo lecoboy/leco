@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>leco-redis</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>leco-redis-jedis</module>
-    </modules>
-
-
+    <artifactId>leco-web</artifactId>
 
 
 </project>

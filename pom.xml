@@ -12,7 +12,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.greg</groupId>
+    <groupId>com.leco</groupId>
     <artifactId>leco</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -29,6 +29,7 @@
         <module>leco-juc</module>
         <module>leco-redis</module>
         <module>leco-rocketmq</module>
+        <module>leco-web</module>
     </modules>
 
 
