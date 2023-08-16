@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>leco-redis-jedis</module>
+        <module>leco-redis-springboot</module>
     </modules>
 
 

@@ -30,6 +30,7 @@
         <module>leco-redis</module>
         <module>leco-rocketmq</module>
         <module>leco-web</module>
+        <module>leco-mybatisplus</module>
     </modules>
 
 
