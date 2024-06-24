@@ -1,27 +1,31 @@
 package com.greg.leco.mybatisplus;
 
-import com.greg.leco.mybatisplus.dao.DemoDao;
-import com.greg.leco.mybatisplus.entity.Demo;
-import org.junit.jupiter.api.Test;
+import com.leco.mybatisplus.dao.DemoDao;
+import com.leco.mybatisplus.entity.Demo;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 import java.util.Random;
 
+//import org.junit.jupiter.api.Test;
+@RunWith(SpringRunner.class)
 @SpringBootTest
 class DemoDaoTest {
 
     @Resource
     private DemoDao demoDao;
 
-    @Test
+//    @DynamicTest
     void testSelectById() {
         Demo demo = demoDao.selectById(1);
         System.out.println(demo);
     }
 
     @Test
-    void testInsert() {
+    public void testInsert() {
         Random random = new Random();
         Demo demo = new Demo();
         for (int i = 0; i < 1000000; i++) {
