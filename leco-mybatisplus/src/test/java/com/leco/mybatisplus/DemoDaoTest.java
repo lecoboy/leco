@@ -1,4 +1,4 @@
-package com.greg.leco.mybatisplus;
+package com.leco.mybatisplus;
 
 import com.leco.mybatisplus.dao.DemoDao;
 import com.leco.mybatisplus.entity.Demo;
