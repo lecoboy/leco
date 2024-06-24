@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.io.FileNotFoundException;
 import java.math.BigDecimal;
 
 /**
@@ -21,7 +22,7 @@ public class AccountServiceTest {
     private AccountService accountService;
 
     @Test
-    public void testTransfer() {
+    public void testTransfer() throws FileNotFoundException {
         accountService.transfer(1, 2, new BigDecimal("100"));
     }
 
