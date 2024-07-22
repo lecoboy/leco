@@ -13,7 +13,7 @@ import java.util.Random;
 //import org.junit.jupiter.api.Test;
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class DemoDaoTest {
+public class DemoDaoTest {
 
     @Resource
     private DemoDao demoDao;
