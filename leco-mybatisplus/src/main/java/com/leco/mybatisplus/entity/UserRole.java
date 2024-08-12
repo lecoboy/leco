@@ -4,17 +4,14 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
-import java.math.BigDecimal;
-
 /**
  * @author greg
- * @version 2024/6/24
+ * @version 2024/8/12
  **/
 @Data
-public class Account {
+public class UserRole {
     @TableId(type = IdType.AUTO)
     private Integer id;
     private String name;
-    private BigDecimal balance;
-    private Byte status;
+    private Integer userId;
 }

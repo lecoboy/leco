@@ -1,4 +1,4 @@
-package com.leco.mybatisplus;
+package com.leco.mybatisplus.service.impl;
 
 import com.leco.mybatisplus.service.AccountService;
 import org.junit.Test;

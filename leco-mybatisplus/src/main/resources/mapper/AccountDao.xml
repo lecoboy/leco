@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.leco.mybatisplus.dao.AccountDao">
+
+    <select id="accountsByStatuses" resultType="com.leco.mybatisplus.entity.Account">
+        select a.* from account a
+        where 1=1
+        <!--<if test="statuses != null">-->
+        <!--    and a.status in (<foreach collection="statuses" item="s" separator=",">#{s}</foreach> )-->
+        <!--</if>-->
+        <if test="1 in statuses">
+            and (a.status is null or a.status = 1)
+        </if>
+    </select>
+</mapper>
