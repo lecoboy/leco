@@ -17,12 +17,18 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <dependencies>
-        <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-            <version>4.4.0</version>
-        </dependency>
+        <!--<dependency>-->
+        <!--    <groupId>org.apache.rocketmq</groupId>-->
+        <!--    <artifactId>rocketmq-client</artifactId>-->
+        <!--    <version>4.4.0</version>-->
+        <!--</dependency>-->
     </dependencies>
     <modules>
         <module>leco-demo</module>
@@ -30,7 +36,7 @@
         <module>leco-redis</module>
         <module>leco-rocketmq</module>
         <module>leco-web</module>
-        <module>leco-mybatisplus</module>
+        <module>leco-mybatisplus</module><module>leco-mybatis</module>
     </modules>
 
 
