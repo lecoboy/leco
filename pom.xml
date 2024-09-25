@@ -36,7 +36,7 @@
         <module>leco-redis</module>
         <module>leco-rocketmq</module>
         <module>leco-web</module>
-        <module>leco-mybatisplus</module><module>leco-mybatis</module>
+        <module>leco-mybatisplus</module><module>leco-mybatis</module><module>leco-shardingsphere</module><module>leco-mybatis-rw2</module>
     </modules>
 
 
