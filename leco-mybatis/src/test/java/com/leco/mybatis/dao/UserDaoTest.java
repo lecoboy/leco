@@ -17,6 +17,12 @@ public class UserDaoTest {
     private UserDao userDao;
 
     @Test
+    public void testGetUserById() {
+        User user = userDao.getUserById(0);
+        System.out.println(user);
+    }
+    
+    @Test
     public void testUserList() {
         DBContextHolder.master();
         List<User> users = userDao.userList();

@@ -1,5 +1,6 @@
 package com.leco.demo;
 
+import com.greg.leco.demo.entity.User;
 import org.assertj.core.util.Lists;
 import org.junit.Test;
 
@@ -25,6 +26,18 @@ public class ListDemo {
         // 如果不想改变list1的元素内容，可以用深拷贝，或者用apace的CollectionUtils.subtract(list1, list2);
         list1.removeAll(list2);
         System.out.println(list1);
+    }
+
+    /**
+     * 测试ArrayList.addAll参数能否为null
+     * 结论：不能
+     */
+    @Test
+    public void testArrayListAddAll() {
+        List<User> users = Lists.newArrayList();
+        List<User> users1 = null;
+        users.addAll(users1);
+        System.out.println(users);
     }
 
     /**
