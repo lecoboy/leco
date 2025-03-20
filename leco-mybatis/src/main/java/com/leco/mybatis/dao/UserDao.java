@@ -10,7 +10,7 @@ import java.util.List;
 public interface UserDao {
     @Select("select u.* from user u")
     List<User> userList();
-    
+
     @Select("select u.* from user u where u.id = #{id}")
     User getUserById(@Param("id") Integer id);
 

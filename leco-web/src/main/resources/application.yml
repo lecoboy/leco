@@ -1,7 +1,36 @@
-spring:
-  redis:
-    host: 127.0.0.1
-    port: 6379
+#spring:
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
 
 server:
   port: 8090
+  
+hello_str: hello world
+
+#spring:
+#  redis:
+#    host: 127.0.0.1
+#    redisson:
+#      config: |
+#        singleServerConfig:
+#          idleConnectionTimeout: 10000
+#          connectTimeout: 10000
+#          timeout: 3000
+#          retryAttempts: 30
+#          retryInterval: 1500
+#          password: null
+#          subscriptionsPerConnection: 50
+#          clientName: null
+#          address: "redis://127.0.0.1:6379"
+#          subscriptionConnectionMinimumIdleSize: 1
+#          subscriptionConnectionPoolSize: 100
+#          connectionMinimumIdleSize: 24
+#          connectionPoolSize: 64
+#          database: 0
+#          dnsMonitoringInterval: 200000
+#          pingConnectionInterval: 200000
+#        threads: 0
+#        nettyThreads: 0
+#        codec: !<org.redisson.codec.JsonJacksonCodec> {}
+#        transportMode: "NIO"

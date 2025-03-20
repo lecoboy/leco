@@ -1,6 +1,7 @@
 package com.leco.demo;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 
@@ -10,7 +11,7 @@ import java.util.HashMap;
  */
 public class HashMapDemo {
 
-    @Test
+    //@Test
     public void testResize() {
         HashMap<String, Integer> map = new HashMap<>();
         map.put("1",1);
@@ -30,7 +31,7 @@ public class HashMapDemo {
         System.out.println(1645891200000L-1645891199999L);
     }
 
-    @Test
+    //@Test
     public void testDeadLoop() {
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(1,1);

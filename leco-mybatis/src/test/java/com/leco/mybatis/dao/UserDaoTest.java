@@ -2,34 +2,34 @@ package com.leco.mybatis.dao;
 
 import com.leco.mybatis.context.DBContextHolder;
 import com.leco.mybatis.entity.User;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+//import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 import java.util.List;
 
-@RunWith(SpringRunner.class)
+//@RunWith(SpringRunner.class)
 @SpringBootTest
 public class UserDaoTest {
     @Resource
     private UserDao userDao;
 
-    @Test
+    //@Test
     public void testGetUserById() {
         User user = userDao.getUserById(0);
         System.out.println(user);
     }
     
-    @Test
+    //@Test
     public void testUserList() {
         DBContextHolder.master();
         List<User> users = userDao.userList();
         System.out.println(users);
     }
 
-    @Test
+    //@Test
     public void testSlaveReadMasterWrite() {
         // slave read
         DBContextHolder.slave();

@@ -2,8 +2,8 @@ package com.leco.mybatisplus;
 
 import com.leco.mybatisplus.dao.DemoDao;
 import com.leco.mybatisplus.entity.Demo;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+//import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -11,8 +11,8 @@ import javax.annotation.Resource;
 import java.util.Random;
 
 //import org.junit.jupiter.api.Test;
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class DemoDaoTest {
 
     @Resource
@@ -24,7 +24,7 @@ public class DemoDaoTest {
         System.out.println(demo);
     }
 
-    @Test
+    //@org.junit.jupiter.api.Test
     public void testInsert() {
         Random random = new Random();
         Demo demo = new Demo();

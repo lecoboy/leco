@@ -12,7 +12,7 @@ import java.util.List;
  * @author greg
  * @version 2024/8/12
  **/
-@Mapper
+//@Mapper
 public interface UserRoleDao extends BaseMapper<UserRole> {
     List<UserRole> userRolesByUserIds(@Param("userIds") List<Integer> userIds);
 }

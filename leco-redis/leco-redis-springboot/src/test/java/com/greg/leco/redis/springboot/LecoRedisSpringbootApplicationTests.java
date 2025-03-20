@@ -10,7 +10,7 @@ class LecoRedisSpringbootApplicationTests {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 
-//    @Test
+//    //@Test
     void contextLoads() {
         redisTemplate.opsForValue().set("k1", "中文");
         System.out.println(redisTemplate.opsForValue().get("k1"));

@@ -8,6 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @author greg
  * @version 2021/12/27
  */
-@Mapper
+//@Mapper
 public interface DemoDao extends BaseMapper<Demo> {
 }

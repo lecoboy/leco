@@ -13,7 +13,7 @@ import java.math.BigDecimal;
  * @author greg
  * @version 2024/6/24
  **/
-@Service
+//@Service
 public class AccountServiceImpl implements AccountService {
     @Resource
     private AccountDao accountDao;

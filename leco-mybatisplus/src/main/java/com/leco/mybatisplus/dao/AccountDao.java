@@ -12,7 +12,7 @@ import java.util.List;
  * @author greg
  * @version 2024/6/24
  **/
-@Mapper
+//@Mapper
 public interface AccountDao extends BaseMapper<Account> {
     @Update("update `account` set balance=1000 where id>0 and id<3")
     int resetBalance();

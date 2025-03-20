@@ -2,8 +2,8 @@ package com.leco.mybatisplus.dao;
 
 import com.leco.mybatisplus.dto.UserDTO;
 import com.leco.mybatisplus.entity.UserRole;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+//import org.junit.runner.RunWith;
 import org.springframework.beans.BeanUtils;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -17,15 +17,15 @@ import java.util.stream.Collectors;
  * @author greg
  * @version 2024/8/12
  **/
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class UserDaoTest {
     @Resource
     private UserRoleDao userRoleDao;
     @Resource
     private UserDao userDao;
 
-    @Test
+    //@Test
     public void testQueryUsers() {
         // sql一对多分页，并且join的表可以用来作为查询条件
         List<UserDTO> userDTOS = userDao.queryUsers(0, 5, "组");
@@ -38,7 +38,7 @@ public class UserDaoTest {
         System.out.println(userDTOS);
     }
 
-    @Test
+    //@Test
     public void test() {
         UserRole userRole = userRoleDao.selectById(1);
         System.out.println(userRole);

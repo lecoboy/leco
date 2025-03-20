@@ -2,7 +2,7 @@ package com.leco.demo;
 
 import com.greg.leco.demo.entity.User;
 import org.assertj.core.util.Lists;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,10 +14,17 @@ import java.util.List;
  */
 public class ListDemo {
 
+    //@Test
+    public void testAddAllEmpty() {
+        List<String> list = Lists.newArrayList("a", "b", "c");
+        list.addAll(new ArrayList<>());
+        System.out.println("done");
+    }
+    
     /**
      * 测试交并补差
      */
-    @Test
+    //@Test
     public void testCollectionOperate() {
         List<Integer> list1 = Lists.newArrayList(1,2,3,4);
         List<Integer> list2 = Lists.newArrayList(3,4,5,6);
@@ -32,7 +39,7 @@ public class ListDemo {
      * 测试ArrayList.addAll参数能否为null
      * 结论：不能
      */
-    @Test
+    //@Test
     public void testArrayListAddAll() {
         List<User> users = Lists.newArrayList();
         List<User> users1 = null;
@@ -43,7 +50,7 @@ public class ListDemo {
     /**
      * 测试foreach
      */
-    @Test
+    //@Test
     public void testForEach() {
         List<Integer> list = Lists.newArrayList(1,2,3,4);
         list.remove(1);

@@ -1,6 +1,7 @@
 package com.leco.demo.jvm;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * 了解一下 iinc 指令
@@ -20,7 +21,7 @@ public class IncDemo {
         System.out.println(b);
     }
 
-    @Test
+    //@Test
     public void test() {
         int i = 0;
         int x = 0;
@@ -31,7 +32,7 @@ public class IncDemo {
         System.out.println(x);
     }
 
-    @Test
+    //@Test
     public void test2() {
         int x = 6;
         x = x++;

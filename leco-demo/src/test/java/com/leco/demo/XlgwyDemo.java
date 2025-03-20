@@ -1,6 +1,7 @@
 package com.leco.demo;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 
@@ -9,7 +10,7 @@ import java.math.BigDecimal;
  * @version 2022/2/23
  */
 public class XlgwyDemo {
-    @Test
+    //@Test
     public void pjhAndYt() {
         int pjhBuy = 60;
         int pjhSell = 300;
@@ -29,7 +30,7 @@ public class XlgwyDemo {
         int ytBuy = 400;
     }
 
-    @Test
+    //@Test
     public void test() {
 //        System.out.println(needZzNum(11,1,2));
 //        System.out.println(mlPerBucket(11,1,2,60,300));

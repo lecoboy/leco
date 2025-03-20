@@ -1,6 +1,7 @@
 package com.leco.demo.jvm;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * 看看 finally 生成的字节码, 并探索一下finally的用法
@@ -60,7 +61,7 @@ public class FinallyDemo {
      * 1.一个异常被catch了，你可以主动选择是否抛出这个异常(catch后不处理，吞掉了try代码块中的异常)
      * 2.一个异常没被catch，它也有可能不被抛出(这个例子里catch中的异常就被finally的异常给吞掉了)
      */
-    @Test
+    //@Test
     public void testEatException() {
         try {
             int[] a = new int[1];

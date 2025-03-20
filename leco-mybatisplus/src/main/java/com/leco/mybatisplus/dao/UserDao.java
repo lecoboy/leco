@@ -10,7 +10,7 @@ import java.util.List;
  * @author greg
  * @version 2024/8/12
  **/
-@Mapper
+//@Mapper
 public interface UserDao {
     List<UserDTO> queryUsers(@Param("index") Integer index,
                              @Param("count") Integer count,
